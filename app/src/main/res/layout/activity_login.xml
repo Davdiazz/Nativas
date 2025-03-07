@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue">
+
+    <TextView
+        android:id="@+id/tvGetPassword_Login"
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/getpassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter_Login" />
+
+    <TextView
+        android:id="@+id/tvNoAccount_Login"
+        android:layout_width="209dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/no_account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegister_Login"
+        android:layout_width="128dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvNoAccount_Login" />
+
+    <Button
+        android:id="@+id/btnEnter_Login"
+        android:layout_width="260dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/BlueDark"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/into"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword_Login"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnGoogle_Login"
+        android:layout_width="336dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Ingresa con Google"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/google"
+        app:iconSize="40dp"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGetPassword_Login"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tvLoginSentence"
+        android:layout_width="343dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/login_sentences"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoApp_Login" />
+
+    <TextView
+        android:id="@+id/tvNameApp_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/app_name"
+        android:textColor="@color/BlueDark"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogoApp_Login"
+        android:layout_width="149dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_app" />
+
+    <EditText
+        android:id="@+id/etUsername_Login"
+        style="@style/EditTextRounded"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginSentence" />
+
+    <EditText
+        android:id="@+id/etPassword_Login"
+        style="@style/EditTextRounded"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername_Login" />
+
+    <ImageView
+        android:id="@+id/ivUser_Login"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toStartOf="@+id/etUsername_Login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginSentence"
+        app:srcCompat="@drawable/user_icon" />
+
+    <ImageView
+        android:id="@+id/ivPassword_Login"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivUser_Login"
+        app:srcCompat="@drawable/key_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CloudNest</string>
+    <string name="my_name">Marlon David Diaz Aranda</string>
+    <string name="sent">Enviar</string>
+    <string name="register">Regístrarte</string>
+    <string name="startnow">Comienza Ahora</string>
+    <string name="into">Ingresar</string>
+    <string name="edit">Editar</string>
+    <string name="getpassword">Recupera tu contraseña</string>
+    <string name="no_account">¿No tienes cuenta?</string>
+    <string name="already_account">Ya tengo Cuenta</string>
+    <string name="home_sentences">Inicia con CloudNest y descubre el mundo del desarrollo del software</string>
+    <string name="login_sentences">El desarrollo es un viaje, no un destino.</string>
+    <string name="google">Ingresa con google</string>
+    <string name="getPassword_sentences">Te acabamos de enviar un correo para recuperar tu contraseña</string>
+    <string name="register_sentences">Completa el formulario para iniciar</string>
+    <string name="conditions">Terminos Y Condiciones</string>
+</resources>
