@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Blue">
+    android:background="@color/Gris">
 
     <ImageView
         android:id="@+id/ivLogoApp_Home"
@@ -41,7 +41,7 @@
         android:fontFamily="@font/abhaya_libre"
         android:text="@string/home_sentences"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/BlueDark"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,7 @@
         android:fontFamily="@font/abhaya_libre"
         android:text="@string/register"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/BlueDark"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,7 +73,7 @@
         android:layout_width="260dp"
         android:layout_height="68dp"
         android:layout_marginTop="80dp"
-        android:backgroundTint="@color/BlueDark"
+        android:backgroundTint="@color/Orange"
         android:fontFamily="@font/abhaya_libre"
         android:text="@string/startnow"
         android:textColor="@color/white"

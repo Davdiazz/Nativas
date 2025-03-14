@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Blue">
+    android:background="@color/Gris">
 
     <TextView
         android:id="@+id/tvNameApp_Splash"
@@ -43,7 +43,7 @@
         android:layout_marginBottom="28dp"
         android:fontFamily="@font/abhaya_libre"
         android:text="@string/my_name"
-        android:textColor="@color/white"
+        android:textColor="@color/Orange"
         android:textSize="25sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"

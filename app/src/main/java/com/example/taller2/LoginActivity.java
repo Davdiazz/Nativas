@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         buttonEnter.setOnClickListener(v -> {
             if(validateLogin()){
                 new Handler().postDelayed(() ->{
-                    Intent intent = new Intent(this, ProfileActivity.class);
+                    Intent intent = new Intent(this,CenterActivity.class);
                     startActivity(intent);
                     Log.d("LoginActivity","onClik: Redirigiendo a ProfileActivity");
                     finish();

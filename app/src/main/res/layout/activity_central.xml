@@ -18,20 +18,20 @@
 
 
         <ImageView
-            android:id="@+id/ivBackIcon_Register"
+            android:id="@+id/ivBackIcon_Central"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:gravity="start"
             app:srcCompat="@drawable/ic_back" />
 
         <ImageView
-            android:id="@+id/ivLogoApp_Register"
+            android:id="@+id/ivLogoApp_Central"
             android:layout_width="wrap_content"
             android:layout_height="137dp"
             app:srcCompat="@drawable/logo_app" />
 
         <TextView
-            android:id="@+id/tvNameApp_Register"
+            android:id="@+id/tvNameApp_Central"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
@@ -45,12 +45,12 @@
             android:textStyle="bold"></TextView>
 
         <TextView
-            android:id="@+id/tvRegisterSentence"
+            android:id="@+id/tvCentralSentence"
             android:layout_width="wrap_content"
             android:layout_height="64dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/abhaya_libre"
-            android:text="@string/register_sentences"
+            android:text="@string/central_sentences"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_user"
-            android:hint="      Nombre"
+            android:hint="      Calorias Diarias"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -70,7 +70,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etnombre_Register"
+                android:id="@+id/etnombre_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords">
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_user"
-            android:hint="      Apellidos"
+            android:hint="      Preferencias alimentarias (vegetariano, vegano, omnívoro"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -92,7 +92,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etapellido_Register"
+                android:id="@+id/etapellido_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"></com.google.android.material.textfield.TextInputEditText>
@@ -104,7 +104,8 @@
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_email"
-            android:hint="      Email"
+            android:hint="      Alergias o restricciones
+"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -113,7 +114,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etemail_Register"
+                android:id="@+id/etemail_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"></com.google.android.material.textfield.TextInputEditText>
@@ -125,7 +126,8 @@
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_phone"
-            android:hint="      Celular"
+            android:hint="      Numero de comidas diarias
+"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -134,7 +136,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etcelular_Register"
+                android:id="@+id/etcelular_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"></com.google.android.material.textfield.TextInputEditText>
@@ -156,7 +158,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etpassword_Register"
+                android:id="@+id/etpassword_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
@@ -178,7 +180,7 @@
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etRepeatPassword_Register"
+                android:id="@+id/etRepeatPassword_Central"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
@@ -186,7 +188,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.checkbox.MaterialCheckBox
-            android:id="@+id/cbConditions_Register"
+            android:id="@+id/cbConditions_Central"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -209,9 +211,8 @@
         </com.google.android.material.button.MaterialButton>
 
         <TextView
-            android:id="@+id/tvLogin_Register"
-            android:layout_width="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvLogin_Central"
+            android:layout_width="match_parent"        app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPassword_Login"
