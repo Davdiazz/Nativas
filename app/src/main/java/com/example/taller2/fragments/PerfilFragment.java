@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
-public class ProfileActivity extends AppCompatActivity {
+public class PerfilFragment extends AppCompatActivity {
     private ImageView imageViewBack;
     private EditText editTextName;
     private EditText editTextLastname;
@@ -26,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     @SuppressLint("MissingSuperCall")
     protected void onCreate(Bundle savedInstaceState) {
         super.onCreate(savedInstaceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.fragment_perfil);
 
         Log.d("ProfileActivity", "onCreate: Inicializando el activity de profile");
 
