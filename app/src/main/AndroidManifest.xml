@@ -13,38 +13,21 @@
         android:theme="@style/Theme.Taller2"
         tools:targetApi="33">
 
-        <activity
-            android:name=".SplashActivity"
+        <activity android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".GetPasswordActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".CenterActivity"
-            android:exported="false">
-        </activity>
+        <activity android:name=".activities.RegistroActivity"
+            android:exported="false"/>
+
+        <activity android:name=".activities.MainActivity"
+            android:exported="false"/>
+
+        <activity android:name=".activities.RecuperarContrasenaActivity" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

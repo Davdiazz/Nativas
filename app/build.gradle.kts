@@ -13,7 +13,7 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -48,9 +48,13 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.core.ktx)
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("com.google.code.gson:gson:2.8.9")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation("com.github.Spikeysanju:MotionToast:1.4")
     implementation("com.google.android.material:material:1.12.0")

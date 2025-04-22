@@ -1,4 +1,6 @@
 package com.example.taller2.fragments;
 
-public class EditarPerfilFragment {
+import androidx.fragment.app.Fragment;
+
+public class EditarPerfilFragment extends Fragment {
 }

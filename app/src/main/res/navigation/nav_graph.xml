@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph.xml">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/InicioFragment">
 
+    <fragment
+        android:id="@+id/InicioFragment"
+        android:name="com.example.taller2.fragments.InicioFragment"
+        android:label="@string/title_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/ProductosFragment"
+        android:name="com.example.taller2.fragments.ProductosFragment"
+        android:label="@string/title_productos"
+        tools:layout="@layout/fragment_productos">
+
+        <argument
+            android:name="categoria"
+            android:defaultValue="all"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CategoriasFragment"
+        android:name="com.example.taller2.fragments.CategoriasFragment"
+        android:label="Categorías"
+        tools:layout="@layout/fragment_categorias">
+
+        <action
+            android:id="@+id/action_categorias_to_productos"
+            app:destination="@id/ProductosFragment">
+            <argument
+                android:name="categoria"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/PerfilFragment"
+        android:name="com.example.taller2.fragments.PerfilFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <!--fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.taller2.fragments.EditarPerfilFragment"
+        android:label="@string/title_edit_profile"
+        tools:layout="@layout/fragment_editar_perfil" /-->
+
+    <fragment
+        android:id="@+id/CarritoFragment"
+        android:name="com.example.taller2.fragments.CarritoFragment"
+        android:label="@string/titulo_carrito"
+        tools:layout="@layout/fragment_carrito" />
 </navigation>
