@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, RegistroActivity.class);
             startActivity(intent);
         });
-        Button btnRecuperarContrasena = findViewById(R.id.btnRecuperarContrasena);
+        TextView btnRecuperarContrasena = findViewById(R.id.btnRecuperarContrasena);
         btnRecuperarContrasena.setOnClickListener(v -> {
             startActivity(new Intent(LoginActivity.this, RecuperarContrasenaActivity.class));
         });
