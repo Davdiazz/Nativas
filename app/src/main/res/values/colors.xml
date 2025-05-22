@@ -2,12 +2,12 @@
 <resources>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="BlueDark">#1C2B4D</color>
-    <color name="Blue">#56B8F9</color>
     <color name="Marfil">#E9DED1</color>
     <color name="Marfil_Oscuro">#DCC8B4</color>
     <color name="Cafe_Claro">#A77B5A</color>
     <color name="VinoTinto">#7B2D26</color>
     <color name="Marron">#6B4226</color>
     <color name="Cafe_Oscuro">#4E342E</color>
+    <color name="Verde">#00FF00</color>
+    <color name="Rojo">#FF0000</color>
 </resources>

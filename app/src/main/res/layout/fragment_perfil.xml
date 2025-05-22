@@ -10,7 +10,6 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingBottom="40dp">
-    <!-- Back arrow -->
     <ImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -18,7 +17,6 @@
         android:contentDescription="Back"
         android:layout_gravity="start" />
 
-    <!-- Top Right Leaf Image -->
     <ImageView
         android:id="@+id/leaf_top_right"
         android:layout_width="24dp"
@@ -35,7 +33,6 @@
         android:gravity="center_vertical"
         android:layout_marginBottom="20dp">
 
-        <!-- Imagen de perfil circular -->
         <ImageView
             android:id="@+id/imageProfile"
             android:layout_width="150dp"
@@ -45,7 +42,6 @@
             android:scaleType="centerCrop"
             android:clipToOutline="true" />
 
-        <!-- Contenedor de texto -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"

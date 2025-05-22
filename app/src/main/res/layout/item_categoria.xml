@@ -8,7 +8,8 @@
     android:layout_height="180dp"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/Cafe_Oscuro"> <!-- Color añadido aquí -->
 
     <LinearLayout
         android:id="@+id/content_layout"
@@ -31,6 +32,7 @@
             android:layout_marginTop="12dp"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             tools:text="Electronica"/>
 
         <TextView
@@ -39,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:textSize="14sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             tools:text="@string/_25_productos"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

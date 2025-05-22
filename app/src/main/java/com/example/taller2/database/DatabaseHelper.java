@@ -40,14 +40,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Guardar el rol como entero: 1 = admin, 0 = usuario normal
     public boolean registrarUsuario(String nombre, String correo, String contrasena) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COL_NOMBRE, nombre);
         values.put(COL_CORREO, correo);
         values.put(COL_CONTRASENA, contrasena);
-        values.put(COL_ROL, 0); // Siempre crea como usuario normal y los admin los vamos a guardar directamente por base
+        values.put(COL_ROL, 0); // Usuario normal
 
         long resultado = db.insert(TABLE_USUARIOS, null, values);
         return resultado != -1;
@@ -74,7 +73,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cursor.close();
         return false;
     }
-//aca es la funcionalidad para la recuperacion de contraseña validando los datos en la base de datos :
 
     public boolean existeCorreo(String correo) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -92,5 +90,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return filas > 0;
     }
 
-}
+    public boolean existeUsuario(String correo) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(
+                "SELECT * FROM " + TABLE_USUARIOS + " WHERE " + COL_CORREO + " = ?",
+                new String[]{correo}
+        );
+        boolean existe = cursor.getCount() > 0;
+        cursor.close();
+        return existe;
+    }
 
+    public void agregarUsuario(String nombre, String correo, String contrasena, boolean esAdmin) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COL_NOMBRE, nombre);
+        values.put(COL_CORREO, correo);
+        values.put(COL_CONTRASENA, contrasena);
+        values.put(COL_ROL, esAdmin ? 1 : 0);
+        db.insert(TABLE_USUARIOS, null, values);
+    }
+}

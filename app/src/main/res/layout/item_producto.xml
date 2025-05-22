@@ -9,22 +9,25 @@
     android:layout_marginVertical="4dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="6dp"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/Marfil"> <!-- Color principal del marco -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/Cafe_Oscuro"> <!-- Fondo interior -->
 
         <!-- Imagen del producto -->
         <ImageView
             android:id="@+id/producto_imagen"
             android:layout_width="match_parent"
-            app:startIconDrawable="@drawable/ic_phone"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:background="@color/BlueDark"
+            android:background="@color/white"
+            android:padding="4dp"
+            app:startIconDrawable="@drawable/ic_phone"
             tools:src="@drawable/celular"/>
 
         <!-- Nombre y precio -->
@@ -42,18 +45,19 @@
                 android:layout_weight="1"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:maxLines="1"
-                android:ellipsize="end"
-                tools:text="Smartphone Premium"/>
+                android:textColor="@color/white"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Smartphone Premium"/>
 
             <TextView
                 android:id="@+id/producto_precio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/BlueDark"
-                android:textStyle="bold"
-                tools:text="$599.99"/>
+                android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="$599.99"/>
         </LinearLayout>
 
         <!-- Descripción -->
@@ -63,10 +67,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="14sp"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:lineSpacingExtra="4dp"
-            tools:text="Pantalla 6.7\"/>
+            android:textColor="@color/white"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4dp"
+        tools:text="Pantalla 6.7\"/>
 
         <!-- Stock y botón -->
         <LinearLayout
@@ -82,20 +87,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14sp"
-                android:textColor="@color/black"
-                tools:text="Disponibles: 15"/>
+                android:textColor="@color/white"
+            tools:text="Disponibles: 15"/>
 
             <Button
                 android:id="@+id/btn_add_to_cart"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:minWidth="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/agregar_al_carrito"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/BlueDark"
-                android:drawablePadding="4dp"
-                style="@style/Widget.AppCompat.Button.Colored"/>
+                android:textColor="@color/black"
+                android:backgroundTint="@color/Marfil"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

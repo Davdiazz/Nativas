@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/Marfil"
     android:fitsSystemWindows="true">
 
     <FrameLayout
@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:indeterminate="true"
             android:visibility="gone"
-            app:indicatorColor="@color/BlueDark"
+            app:indicatorColor="@color/black"
             app:trackColor="@color/black" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -40,7 +40,7 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="24dp"
         android:contentDescription="@string/go_to_carrito"
-        app:backgroundTint="@color/BlueDark"
+        app:backgroundTint="@color/Cafe_Oscuro"
         app:tint="@color/white" />
 
 </RelativeLayout>

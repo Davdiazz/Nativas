@@ -126,8 +126,8 @@
                     "Pantalla 6.5\", 128GB almacenamiento",
                     299.99,
                     15,
-                    R.drawable.ic_phone,
-                    "Electrónica"
+                    R.drawable.libro,
+                    "Comedia"
             ));
 
             productos.add(new Producto(
@@ -136,8 +136,8 @@
                     "Intel i7, 16GB RAM, 512GB SSD",
                     899.99,
                     8,
-                    R.drawable.ic_android,
-                    "Electrónica"
+                    R.drawable.libro,
+                    "Comedia"
             ));
 
             // Productos de ropa
@@ -147,8 +147,8 @@
                     "100% algodón, talla M",
                     29.99,
                     20,
-                    R.drawable.ic_android,
-                    "Ropa"
+                    R.drawable.libro,
+                    "Terror"
             ));
 
             productos.add(new Producto(
@@ -157,8 +157,8 @@
                     "Para running, talla 42",
                     79.99,
                     12,
-                    R.drawable.ic_android,
-                    "Ropa"
+                    R.drawable.libro,
+                    "Terror"
             ));
 
             // Productos de hogar
@@ -168,8 +168,44 @@
                     "Algodón egipcio, rey",
                     49.99,
                     10,
-                    R.drawable.ic_android,
-                    "Hogar"
+                    R.drawable.libro,
+                    "Fantasia"
+            ));
+            productos.add(new Producto(
+                    "P005",
+                    "Juego de Sábanas",
+                    "Algodón egipcio, rey",
+                    49.99,
+                    10,
+                    R.drawable.libro,
+                    "Fantasia"
+            ));
+            productos.add(new Producto(
+                    "P005",
+                    "Juego de Sábanas",
+                    "Algodón egipcio, rey",
+                    49.99,
+                    10,
+                    R.drawable.libro,
+                    "Ciencia"
+            ));
+            productos.add(new Producto(
+                    "P005",
+                    "Juego de Sábanas",
+                    "Algodón egipcio, rey",
+                    49.99,
+                    10,
+                    R.drawable.libro,
+                    "Ciencia"
+            ));
+            productos.add(new Producto(
+                    "P005",
+                    "Juego de Sábanas",
+                    "Algodón egipcio, rey",
+                    49.99,
+                    10,
+                    R.drawable.libro,
+                    "Infantil"
             ));
 
             return productos;

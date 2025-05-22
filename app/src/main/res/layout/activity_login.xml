@@ -176,7 +176,9 @@
                 android:fontFamily="@font/mogra"
                 android:text="or"
                 android:textColor="#4E342E"
-                android:textSize="20sp"></TextView>
+                android:textSize="20sp">
+                
+            </TextView>
         </LinearLayout>
         <!-- Redes sociales -->
         <LinearLayout
@@ -185,16 +187,12 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/icfacebook" />
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/icgoogle" />
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:buttonSize="wide"
+                app:colorScheme="dark"/>
         </LinearLayout>
 
     </LinearLayout>

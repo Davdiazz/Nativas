@@ -6,7 +6,6 @@
     <string name="startnow">Comienza Ahora</string>
     <string name="into">Ingresar</string>
     <string name="edit">Editar</string>
-
     <string name="getpassword">Recupera tu contraseña</string>
     <string name="no_account">¿No tienes cuenta?</string>
     <string name="already_account">Ya tengo Cuenta</string>
@@ -22,8 +21,8 @@
     <string name="pantalla_de_productos">pantalla_de_productos</string>
     <string name="navigation_drawer_open">Abrir</string>
     <string name="navigation_drawer_close">Cerrar</string>
-    <string name="inicio">inicio\n</string>
-    <string name="productos">productos</string>
+    <string name="Inicio">Inicio\n</string>
+    <string name="Productos">Productos</string>
     <string name="title_inicio">Bienvenido a la tienda virtual</string>
     <string name="title_productos">Productos\n</string>
     <string name="title_perfil">Usuario\n</string>
@@ -49,4 +48,17 @@
     <string name="eliminar">Eliminar</string>
     <string name="_25_productos">25 productos</string>
     <string name="agregar_al_carrito">Agregar al Carrito</string>
+    <string name="google_cloud_client_id">1008341001009-inepm9odb08qfj4k435oun86du37bad9.apps.googleusercontent.com</string>
+    <string name="API_KEY">AIzaSyCr6arZXkJXM6NpjMlxAfpyhuQrD9sVmjY</string>
+    <string name="Ubicaciones">Ubicaciones</string>]
+    <string name="ubicaciontiendafisica">Ubicacion Tienda Fisica</string>
+    <string name="categorias_Libros">Categorias Libros</string>
+    <string name="street_2_example">Street 2-Example</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="monday_to_friday_n3_00_am_to_8_00_pm">Monday to Friday:\n3:00 am to 8:00 pm</string>
+    <string name="store1">Store1</string>
+    <string name="street_1_example">Street 1-Example</string>
+    <string name="your_position">Your Position:</string>
+    <string name="near_stores">Near Stores</string>
+
 </resources>

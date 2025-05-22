@@ -54,4 +54,9 @@
         android:name="com.example.taller2.fragments.CarritoFragment"
         android:label="@string/titulo_carrito"
         tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/UbicacionesFragment"
+        android:name="com.example.taller2.fragments.UbicacionesFragment"
+        android:label="@string/ubicaciontiendafisica"
+        tools:layout="@layout/fragment_ubicaciones" />
 </navigation>

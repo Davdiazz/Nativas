@@ -38,37 +38,37 @@ public class CategoriasFragment extends Fragment {
         List<Categoria> categorias = new ArrayList<>();
 
         categorias.add(new Categoria(
-                "Electrónica",
+                "Comedia",
                 25,
-                R.drawable.ic_android,
+                R.drawable.comedia,
                 R.id.ProductosFragment // Redirige al fragmento de productos
         ));
 
         categorias.add(new Categoria(
-                "Ropa",
+                "Terror",
                 42,
-                R.drawable.ic_android,
+                R.drawable.terror,
                 R.id.ProductosFragment
         ));
 
         categorias.add(new Categoria(
-                "Hogar",
+                "Fantasia",
                 18,
-                R.drawable.ic_android,
+                R.drawable.fantasia,
                 R.id.ProductosFragment
         ));
 
         categorias.add(new Categoria(
-                "Deportes",
+                "Ciencia",
                 31,
-                R.drawable.ic_android,
+                R.drawable.ciencia,
                 R.id.ProductosFragment
         ));
 
         categorias.add(new Categoria(
-                "Accesorios",
+                "Infantil",
                 27,
-                R.drawable.ic_android,
+                R.drawable.infantil,
                 R.id.ProductosFragment
         ));
 

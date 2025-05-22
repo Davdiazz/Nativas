@@ -8,10 +8,10 @@
 
 
     <item android:id="@+id/InicioFragment"
-        android:title="@string/inicio"/>
+        android:title="@string/Inicio"/>
 
     <item android:id="@+id/ProductosFragment"
-        android:title="@string/productos"/>
+        android:title="@string/Productos"/>
 
     <item android:id="@+id/CarritoFragment"
         android:title="@string/carrito"/>
@@ -19,5 +19,7 @@
         android:title="@string/usuario"/>
     <item android:id="@+id/CategoriasFragment"
         android:title="@string/categorias"/>
+    <item android:id="@+id/UbicacionesFragment"
+        android:title="@string/Ubicaciones"/>
     </group>
 </menu>
